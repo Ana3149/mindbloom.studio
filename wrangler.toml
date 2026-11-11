@@ -1,0 +1,10 @@
+# Cloudflare Worker that serves the static site (see scripts/build-worker.mjs).
+name = "mindbloom-studio"
+main = ".worker/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+routes = [
+  { pattern = "mindbloom.studio", custom_domain = true },
+  { pattern = "www.mindbloom.studio", custom_domain = true },
+]
