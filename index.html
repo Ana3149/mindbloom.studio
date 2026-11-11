@@ -4,36 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MindBloom Studio — Sensory & Routine Vault</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            linen: '#FAF8F5',
-            charcoal: '#2B2B2B',
-            sage: '#8FA89B',
-            terracotta: '#D9886C',
-            sand: '#E6DEC8'
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Plus Jakarta Sans', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="assets/site.css">
   <style>
     body { background-color: #FAF8F5; color: #2B2B2B; }
-    .card-flip { perspective: 1000px; }
-    .card-inner { transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
-    .card-flip.flipped .card-inner { transform: rotateY(180deg); }
-    .card-front, .card-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
-    .card-back { transform: rotateY(180deg); }
   </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-sage/20">
@@ -185,6 +158,10 @@
     MindBloom Studio &copy; 2026 — Designed for Authentic Neurodiversity.
     <span class="mx-2">·</span>
     <a href="berlin.html" class="underline hover:text-charcoal">Berlin Relocation Vault</a>
+    <span class="mx-2">·</span>
+    <a href="privacy.html" class="underline hover:text-charcoal">Privacy</a>
+    <span class="mx-2">·</span>
+    <a href="legal-notice.html" class="underline hover:text-charcoal">Impressum</a>
   </footer>
 
   <script>

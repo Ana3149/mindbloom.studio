@@ -5,32 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MindBloom Studio — Berlin Vault</title>
   <meta name="description" content="A strategic guide to settling in Berlin: housing, bureaucracy and medical documentation, from 10 years of lived experience in Germany.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif']
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="assets/site.css">
   <style>
-    html { scroll-behavior: smooth; }
     body { background-color: #F9F6F0; color: #2C2A29; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-    .animate-fadeIn { animation: fadeIn 0.35s ease-out; }
-    .quiz-option[aria-pressed="true"] { border-color: #8C4A32; background-color: #FAF8F5; box-shadow: 0 0 0 1px #8C4A32; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .animate-fadeIn { animation: none; }
-    }
   </style>
 </head>
 <body class="min-h-screen font-sans antialiased">
@@ -125,7 +102,7 @@
 
         <ul class="space-y-3 text-left mb-8 text-sm text-[#594A42]">
           <li>🔒 <span data-i18n="checkoutPoint1"></span></li>
-          <li>🇪🇺 <span data-i18n="checkoutPoint2"></span></li>
+          <li>💶 <span data-i18n="checkoutPoint2"></span></li>
           <li>✉️ <span data-i18n="checkoutPoint3"></span></li>
         </ul>
 
@@ -138,6 +115,12 @@
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           <span data-i18n="sslNote"></span>
         </div>
+        <p class="mt-3 text-xs text-gray-500">
+          <span data-i18n="termsPrefix"></span>
+          <a href="terms.html" class="underline hover:text-[#8C4A32]" data-i18n="termsLink"></a>
+          <span data-i18n="termsAnd"></span>
+          <a href="privacy.html" class="underline hover:text-[#8C4A32]" data-i18n="privacyLink"></a>.
+        </p>
       </div>
     </div>
   </section>
@@ -147,6 +130,11 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center space-y-4 text-xs">
       <p data-i18n="disclaimer"></p>
       <p>© 2026 MindBloom Studio. <span data-i18n="founderLabel"></span> Ana Paula Kretschmar. <span data-i18n="contactLabel"></span> <a href="mailto:mind@mindbloom.studio" class="underline hover:text-white">mind@mindbloom.studio</a></p>
+      <p class="space-x-3">
+        <a href="terms.html" class="underline hover:text-white" data-i18n="termsLinkShort"></a>
+        <a href="privacy.html" class="underline hover:text-white" data-i18n="privacyLinkShort"></a>
+        <a href="legal-notice.html" class="underline hover:text-white">Impressum</a>
+      </p>
     </div>
   </footer>
 
@@ -160,7 +148,7 @@
         heroDesc: "Navigate the brutal Berlin housing market, decode bureaucratic hurdles, and correctly map your medical and prescription documentation (ADHD/ASD/Depression) with a seasoned expert who actually lived it for a decade.",
         ctaPrimary: "Secure High-Ticket VIP Advisory (€350)",
         ctaSecondary: "Take Free Berlin Readiness Quiz",
-        founderBadge: "Verified Berlin Veteran",
+        founderBadge: "10 Years in Germany",
         founderTitle: "Founded by Ana Paula Kretschmar",
         founderBio: "After living 10 years in Germany, I experienced firsthand the silence of the housing crisis, the complexity of official paperwork, and the strict rules around medical translations and controlled medications. I don't sell false miracles or guaranteed keys—I give you the exact operational roadmap, vetted partner connections, and strategic clarity to protect your mental health and sanity.",
         contactLabel: "Contact:",
@@ -174,14 +162,20 @@
           "Dedicated Support Channel: Secure, asynchronous guidance via email (mind@mindbloom.studio) with time for precise legal and practical research"
         ],
         paymentTitle: "Secure Global Checkout",
-        paymentDesc: "Processed safely via Stripe and PayPal. We accept major credit cards, USD, EUR, and Wise transfers.",
+        paymentDesc: "Payments are processed securely by Stripe. All major credit and debit cards are accepted, from anywhere in the world.",
         priceLabel: "High-Ticket VIP Vault",
         priceUnit: "/ one-time",
-        checkoutPoint1: "Secure Stripe & PayPal Integration",
-        checkoutPoint2: "Wise EUR Account Direct Payout",
+        checkoutPoint1: "Secure checkout hosted by Stripe",
+        checkoutPoint2: "One-time payment in EUR — no subscription",
         checkoutPoint3: "Direct asynchronous support via mind@mindbloom.studio",
-        payCta: "Pay Securely with Stripe / PayPal",
+        payCta: "Pay Securely with Stripe",
         sslNote: "Encrypted SSL Checkout",
+        termsPrefix: "By paying you agree to our",
+        termsLink: "Terms of Service",
+        termsAnd: "and",
+        privacyLink: "Privacy Policy",
+        termsLinkShort: "Terms",
+        privacyLinkShort: "Privacy",
         disclaimer: "Disclaimer: We do not guarantee apartment allocation or act as a real estate agency. We provide professional strategic orientation, document structuring, and vetted expert referrals based on 10 years of personal experience in Germany.",
         quizTitle: "Are You Ready for Berlin? Free Interactive Assessment",
         quizQ1: "Do you have your official documents and savings organized for at least 3 months of transition?",
@@ -199,7 +193,7 @@
         heroDesc: "Navegue pela brutal crise imobiliária de Berlim, desvende a burocracia alemã e estruture corretamente seus laudos e medicamentos controlados (TDAH/TEA/Depressão) com quem realmente morou lá por uma década.",
         ctaPrimary: "Garantir Consultoria VIP High-Ticket (€350)",
         ctaSecondary: "Fazer Quiz Gratuito de Prontidão",
-        founderBadge: "Veterana de Berlim",
+        founderBadge: "10 Anos na Alemanha",
         founderTitle: "Fundado por Ana Paula Kretschmar",
         founderBio: "Após viver 10 anos na Alemanha, vivi na pele o silêncio da crise imobiliária, a burocracia implacável e as regras rígidas de tradução de laudos e remédios controlados. Eu não vendo falsos milagres ou chaves garantidas — eu entrego o mapa operacional exato, rede de parceiros auditados e clareza estratégica para proteger sua saúde mental.",
         contactLabel: "Contato:",
@@ -213,14 +207,20 @@
           "Suporte Dedicado por E-mail: Orientações assíncronas seguras via mind@mindbloom.studio com tempo para pesquisa técnica e jurídica precisa"
         ],
         paymentTitle: "Checkout Global Seguro",
-        paymentDesc: "Processado com segurança via Stripe e PayPal. Aceitamos cartões internacionais, USD, EUR e transferência Wise.",
+        paymentDesc: "Pagamento processado com segurança pelo Stripe. Aceitamos os principais cartões de crédito e débito, de qualquer país.",
         priceLabel: "Consultoria VIP High-Ticket",
         priceUnit: "/ pagamento único",
-        checkoutPoint1: "Integração segura com Stripe e PayPal",
-        checkoutPoint2: "Recebimento direto em conta Wise (EUR)",
+        checkoutPoint1: "Checkout seguro hospedado pelo Stripe",
+        checkoutPoint2: "Pagamento único em EUR — sem assinatura",
         checkoutPoint3: "Suporte assíncrono direto via mind@mindbloom.studio",
-        payCta: "Pagar com Segurança via Stripe / PayPal",
+        payCta: "Pagar com Segurança via Stripe",
         sslNote: "Checkout criptografado (SSL)",
+        termsPrefix: "Ao pagar, você concorda com os nossos",
+        termsLink: "Termos de Serviço",
+        termsAnd: "e com a",
+        privacyLink: "Política de Privacidade",
+        termsLinkShort: "Termos",
+        privacyLinkShort: "Privacidade",
         disclaimer: "Aviso Legal: Não garantimos a obtenção de imóveis nem atuamos como imobiliária. Fornecemos orientação estratégica profissional, estruturação de documentos e indicações de especialistas baseadas em 10 anos de vivência na Alemanha.",
         quizTitle: "Você está pronto para Berlim? Avaliação Interativa Gratuita",
         quizQ1: "Você possui documentos organizados e reservas financeiras para pelo menos 3 meses de transição?",
