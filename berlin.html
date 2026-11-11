@@ -24,9 +24,10 @@
           class="flex items-center gap-2 text-sm font-medium bg-[#F3EFEA] hover:bg-[#E6E0D5] px-3 sm:px-4 py-2 rounded-lg transition">
           <!-- globe icon -->
           <svg class="w-4 h-4 text-[#8C4A32]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-          <span data-i18n="langLabel"></span>
+          <span class="hidden sm:inline" data-i18n="langLabel"></span>
+          <span class="sm:hidden" data-i18n="langShort"></span>
         </button>
-        <a href="#checkout" class="bg-[#8C4A32] hover:bg-[#733B27] text-white text-sm font-medium px-4 sm:px-5 py-2.5 rounded-lg transition shadow-sm whitespace-nowrap" data-i18n="navCta"></a>
+        <a href="#checkout" class="bg-[#8C4A32] hover:bg-[#733B27] text-white text-sm font-medium px-4 sm:px-5 py-2.5 rounded-lg transition shadow-sm whitespace-nowrap"><span class="hidden sm:inline" data-i18n="navCta"></span><span class="sm:hidden" data-i18n="navShort"></span></a>
       </div>
     </div>
   </header>
@@ -142,7 +143,9 @@
     const content = {
       en: {
         langLabel: "PT-BR (Português)",
+        langShort: "PT",
         navCta: "Book VIP Advisory",
+        navShort: "Book",
         heroBadge: "10 Years Living & Navigating Berlin Experience",
         heroTitle: "The Real, No-BS Strategic Guide to Settling in Berlin",
         heroDesc: "Navigate the brutal Berlin housing market, decode bureaucratic hurdles, and correctly map your medical and prescription documentation (ADHD/ASD/Depression) with a seasoned expert who actually lived it for a decade.",
@@ -187,7 +190,9 @@
       },
       pt: {
         langLabel: "EN (English)",
+        langShort: "EN",
         navCta: "Reservar VIP",
+        navShort: "Reservar",
         heroBadge: "10 Anos de Vivência Real na Alemanha",
         heroTitle: "O Guia Estratégico Sem Filtros para Viver em Berlim",
         heroDesc: "Navegue pela brutal crise imobiliária de Berlim, desvende a burocracia alemã e estruture corretamente seus laudos e medicamentos controlados (TDAH/TEA/Depressão) com quem realmente morou lá por uma década.",
